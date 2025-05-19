@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a485d154-de81-4f39-8189-dd0dbbeb01b1">
+  <producedTypes>
+    <objectType typeId="1434af3e-eef8-4528-bad2-90adec476cad" valueTypeId="63b5ded7-2bd3-42b3-ba14-0731de1fc4b5"/>
+    <refType typeId="b70eb064-10bd-490e-b4bc-060bf7c2c2bf" valueTypeId="d8d9f300-b057-40f6-9c5d-09a9b39aa2cf"/>
+    <selectionType typeId="b57f7d66-093d-4066-91d9-3815b688c2cb" valueTypeId="f7b00605-97f5-429a-bbc9-d47edfc8a727"/>
+    <listType typeId="35cc3427-b880-43ee-bdf3-9eaa3c8d6209" valueTypeId="826c2ddd-7fef-4d12-8f77-16e1c437581d"/>
+    <managerType typeId="66e968af-a4b7-4419-8e3d-cde41324d5d5" valueTypeId="246a93cc-fdcb-4106-981c-18172ca71c0d"/>
+  </producedTypes>
+  <name>УстановкаЗатратНаРебенкаВМесяцПоДОП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка затрат на ребенка в месяц по ДОП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаЗатратНаРебенкаВМесяцПоДОП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаЗатратНаРебенкаВМесяцПоДОП.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ЗатратыНаРебенкаВМесяц</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="d6ee0b4b-bc59-43a3-a775-3349f9232557">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="615ed061-bd27-462c-a207-3efe7a7a7863">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="5be324b4-9968-482d-b271-cbd8a210475f">
+    <producedTypes>
+      <objectType typeId="440c325d-dd62-4f7c-bebc-a7db0428ac6d" valueTypeId="3b89ded3-e9ce-417e-a73f-b61009f03053"/>
+      <rowType typeId="b7515f56-34a8-4c08-b354-5070132f16e6" valueTypeId="5a5f1e46-e15a-4626-933f-8e3de09e562e"/>
+    </producedTypes>
+    <name>ПлатныеУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платные услуги</value>
+    </synonym>
+    <attributes uuid="00588b21-2a9a-4a82-9b19-eca219b71e84">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование услуги</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПлатныеУслуги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="181f7cc2-edb2-49d5-8e34-78b49b602f71">
+      <name>ЗатратыНаРебенкаВМесяц</name>
+      <synonym>
+        <key>ru</key>
+        <value>Затраты на ребенка в месяц</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

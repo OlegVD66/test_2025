@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c500a429-5a86-4fcd-b4b3-f192b27b7343">
+  <producedTypes>
+    <selectionType typeId="f5a3ecb2-a4cf-4ebd-95f9-f68f418db584" valueTypeId="394311a7-c96e-4f73-8d7d-c7a0d3ce3dec"/>
+    <listType typeId="7a470562-4b87-4287-8ce5-d98b990c9e3a" valueTypeId="59aa95d5-6337-47ba-a7b6-58b480ef0348"/>
+    <managerType typeId="189d4f14-5657-48bc-b157-a69ea256d0eb" valueTypeId="e5cab4b5-d870-47f7-85fd-5afb80c524ba"/>
+    <recordSetType typeId="43221c1d-59cc-40c3-b348-18f1e4ecfef2" valueTypeId="db4c32cc-af49-4cbc-9358-dd40f89deb67"/>
+    <recordKeyType typeId="ae4fc6e5-84ed-469e-8aa8-16fcbff76c37" valueTypeId="588d9e46-b3da-4c1a-afa8-d6dff5d2882b"/>
+    <recordType typeId="9db00429-a6dc-4edc-8eba-7b0c0dab4a08" valueTypeId="f7037538-451b-4b3c-84c0-09e7e8bff400"/>
+    <recordManagerType typeId="4c6d34d4-b040-44a0-9129-5d59af9de212" valueTypeId="c2a4e2a5-9dd0-47d6-bee5-a1b2968ea2a9"/>
+  </producedTypes>
+  <name>ЦеныНаДопУслуги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены на дополнительные услуги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цены на допуслуги</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Цены на дополнительные платные услуги по реализации дополнительных общеобразовательных программ</value>
+  </extendedListPresentation>
+  <resources uuid="867bfdeb-f3c3-4419-a2b3-460c5575a1f1">
+    <name>КоличествоЗанятийВМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество занятий в месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b19b20df-2973-466f-a8f9-844ad6410bd3">
+    <name>ТарифЗаОдноЗанятие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф за одно занятие, руб.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1b52a28b-4a3e-48a6-90a8-fe7e0a2f4aa3">
+    <name>ТарифЗаОдинМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф за один месяц, руб.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8322b300-be18-4621-a26d-7a839a7b4057">
+    <name>ТарифЗаДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф за ДОП, руб.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1825166f-1d52-467e-abe2-c0c89a99832e">
+    <name>ПродолжительностьОдногоЗанятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжительность одного занятия, минут</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="35dacf92-7eb2-4b2e-a595-c190db1cdfc4">
+    <name>ПериодРеализацииДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период реализации ДОП, месяцев</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="34283b52-0b54-47d6-a70f-c6bf134a7a38">
+    <name>КоличествоЗанятийВПериодРеализацииДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество занятий в период реализации ДОП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7b63694b-7c2d-42f3-aa6c-2bd90ba62276">
+    <name>ВозрастОбучающихся</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст обучающихся</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВозрастОбучающихся</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5b7866e9-d135-43ef-b491-3b54e00af866">
+    <name>ДополнительнаяОбщеобразовательнаяПрограмма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная общеобразовательная программа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДОП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f4a527f0-e9ed-4f5a-9cb1-575f9607709f">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование услуги</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПлатныеУслуги</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ДОП для конкретного возраста обучающихся</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

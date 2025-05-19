@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06d15da6-3582-4277-8b3b-fa8b345dfcac">
+  <producedTypes>
+    <refType typeId="4e32e2f7-1f68-4b10-bdcc-9d9c2736cf6d" valueTypeId="70f95616-1878-4ce2-b31e-a37ee028c6da"/>
+    <listType typeId="acc82da3-9935-4742-875f-cffc737f68ed" valueTypeId="b60931ee-aa92-433e-99ea-94188586c7a1"/>
+    <managerType typeId="1debc088-76c6-4b44-a041-eaefb50901e1" valueTypeId="c4323582-be15-4e13-8042-830e95796aba"/>
+  </producedTypes>
+  <name>Должность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должность</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9bcb075e-8b05-49a8-b460-3a0d044af30d">
+    <name>Воспитатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Воспитатель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d26d9f61-5c42-400a-b860-96a9631a5d2d">
+    <name>СтаршийВоспитатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старший воспитатель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ef3ec70-479a-4dc4-b5ff-4a23e1d705c5">
+    <name>МузыкальныйРуководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Музыкальный руководитель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="12c63e43-907d-411c-80ca-3f44d1a9a0c1">
+    <name>ИнструкторПоФизическойКультуре</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструктор по физической культуре</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
