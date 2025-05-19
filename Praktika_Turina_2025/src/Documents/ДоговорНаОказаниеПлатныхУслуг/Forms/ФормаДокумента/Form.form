@@ -587,6 +587,10 @@
   <items xsi:type="form:FormField">
     <name>ФИОРодителя</name>
     <id>13</id>
+    <title>
+      <key>ru</key>
+      <value>ФИО родителя (представителя)</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
