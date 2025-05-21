@@ -229,7 +229,7 @@
     </extendedTooltip>
     <type>UsualButton</type>
     <commandName>Form.Command.ЗаполнитьГруппу</commandName>
-    <representation>Auto</representation>
+    <representation>PictureAndText</representation>
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
     <placementArea>UserCmds</placementArea>
@@ -244,7 +244,13 @@
       <strikeout>false</strikeout>
       <scale>100</scale>
     </font>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.FixTable</picture>
+    </picture>
     <representationInContextMenu>Auto</representationInContextMenu>
+    <shape>Oval</shape>
+    <shapeRepresentation>Always</shapeRepresentation>
+    <pictureLocation>Left</pictureLocation>
   </items>
   <items xsi:type="form:Table">
     <name>СписокПосещения</name>
