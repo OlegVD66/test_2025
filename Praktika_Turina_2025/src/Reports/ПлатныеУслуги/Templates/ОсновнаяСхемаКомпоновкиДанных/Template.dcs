@@ -105,11 +105,11 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЖурналПосещаемости КАК ЖурналПосещаемости
 			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДОП КАК ДОП
 				ПРАВОЕ СОЕДИНЕНИЕ Справочник.ПлатныеУслуги КАК ПлатныеУслуги
-				ПО (ПлатныеУслуги.Владелец = ДОП.Ссылка)
+				ПО ПлатныеУслуги.Владелец = ДОП.Ссылка
 			ПО ЖурналПосещаемости.НаименованиеДОП = ДОП.Ссылка
 		ПО ЖурналПосещаемостиСписокПосещения.Ссылка = ЖурналПосещаемости.Ссылка
 ГДЕ
-	(Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания)</query>
+	ЖурналПосещаемости.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания</query>
 	</dataSet>
 	<totalField>
 		<dataPath>ИтоговоеКоличествоПосещений</dataPath>
@@ -252,6 +252,32 @@
 					</dcsset:appearance>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Планые услуги версия 1.0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemTable">
 				<dcsset:column>
 					<dcsset:groupItems>
