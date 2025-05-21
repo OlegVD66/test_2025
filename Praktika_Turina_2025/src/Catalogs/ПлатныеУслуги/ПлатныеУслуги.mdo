@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ccdc109-fd1e-4aab-8eba-9ffa05a403be">
+  <producedTypes>
+    <objectType typeId="b193b852-546e-4d75-9c9c-d949ece8adb2" valueTypeId="44e8d9ae-d209-4b46-b6af-60e0adf19d00"/>
+    <refType typeId="668bf009-b8f4-4f6a-bdfb-d2ce059dcfec" valueTypeId="bd15cbdb-936d-4fbe-a4ce-f720c673583a"/>
+    <selectionType typeId="aadd9a4c-ca19-4f14-868d-cea8f4082640" valueTypeId="b0fe97a9-c510-4a73-b858-0432fcc1cebe"/>
+    <listType typeId="1caf68a4-e558-4f3c-8b3e-56977ab72ace" valueTypeId="a623b373-39f1-4b98-a182-7e4160718594"/>
+    <managerType typeId="b537d260-4855-475f-a365-447bedd3650f" valueTypeId="0d246a6d-225a-4ec9-a093-465f7a96e784"/>
+  </producedTypes>
+  <name>ПлатныеУслуги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Платные услуги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПлатныеУслуги.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПлатныеУслуги.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ДОП</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПлатныеУслуги.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПлатныеУслуги.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="e9b27575-744a-47af-941a-038820f5b0af">
+    <name>ВозрастОбучающихся</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст обучающихся</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВозрастОбучающихся</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Возраст обучающихся, на который расчитана дополнительная образовательная программа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e23fe77a-d0c7-4f47-9f7d-e986dff1a5d1">
+    <name>ФормаОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обучения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФормаОбучения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Очная или заочная</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="74a49fe6-a4ca-4db4-a6bb-21c8ba6a3499">
+    <name>ВидУровеньНаправленностьДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направленность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ebadc744-f1a4-4f3b-a431-ed55fe8d0634">
+    <name>КоличествоЧасовВНеделю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов в неделю</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b265809e-8d23-43f7-a3c0-8321fa185a11">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="71b4a37b-7ff1-4ec4-bbd7-bc21b2f536ea">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

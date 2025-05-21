@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7bef4d4-a00d-4d54-bab3-a649e1445425">
+  <producedTypes>
+    <refType typeId="baa7914f-d290-47ec-87a1-3f81f5bdeeb1" valueTypeId="46a2f2e3-6164-4cfb-91c6-0c7326c8e965"/>
+    <listType typeId="8292d52c-371d-487b-87ed-8a1e1253bc32" valueTypeId="3221d040-d196-4384-9984-b5145d4e9b17"/>
+    <managerType typeId="1bc29f69-c0da-4c8a-892b-0f02a8eb4fb5" valueTypeId="2ab38619-d141-409c-8fc0-e237a356ad08"/>
+  </producedTypes>
+  <name>ФормаОбучения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма обучения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a13feb1e-c0e4-44af-859d-5c574ea127fc">
+    <name>Очная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="19e8055b-2734-426d-af7f-63f663ef3aeb">
+    <name>Заочная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заочная</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

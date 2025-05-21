@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="299783d7-5823-465a-bba1-4947137f6add">
+  <producedTypes>
+    <selectionType typeId="5c8fe087-ffb6-40c7-9940-6085c840f951" valueTypeId="61dbc6d2-15ee-4f89-ae14-ed1aa3b183e2"/>
+    <listType typeId="293a7c54-c26f-4794-b475-124289fa7643" valueTypeId="513487fd-0044-4855-bdf2-2e34d0c78e99"/>
+    <managerType typeId="3334383f-9b19-4ec6-a0b4-40ae0f898da4" valueTypeId="e4ba16b4-27a3-4096-a0fa-87bab329a29c"/>
+    <recordSetType typeId="4006ec37-eb9b-4f41-8eac-93072b41d21e" valueTypeId="946c3082-d208-4acc-afde-a2aef920e189"/>
+    <recordKeyType typeId="f0e14010-715b-4838-90d1-e8ae8fceb9c2" valueTypeId="21440003-a6f8-4ba8-84eb-b64a4e2f138e"/>
+    <recordType typeId="33460cff-b307-46bf-9096-83bf5906f06c" valueTypeId="aa1bd081-b1bd-4dd0-94b3-e9f0d8cbbbec"/>
+    <recordManagerType typeId="6a8a68b8-f908-477a-ab63-85915b3db70a" valueTypeId="369f7e54-e1cc-4b14-8869-58887c921bac"/>
+  </producedTypes>
+  <name>УслугиДОППоДетям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Услуги ДОП по детям</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Услуги ДОП по детям</value>
+  </listPresentation>
+  <resources uuid="65fd82aa-a926-4cca-b844-0f0a7c01b5bf">
+    <name>ДатаЗачисленияОтчисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата зачисления / отчисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f181ca07-167f-4c31-82fc-90cbad8c257e">
+    <name>Ребенок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ребенок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Дети</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2aaa8745-566a-4796-b560-77eb0187f01c">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПлатныеУслуги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fb5e4d93-3026-4166-97d1-2a4d014ae03a">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОперацииУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

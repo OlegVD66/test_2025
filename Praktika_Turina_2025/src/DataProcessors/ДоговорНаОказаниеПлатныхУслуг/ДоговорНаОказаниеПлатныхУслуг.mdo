@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fe45c67-9af8-455b-a99b-4cd399b46173">
+  <producedTypes>
+    <objectType typeId="7f93a1d6-8607-47c4-a5c6-f362f54d6129" valueTypeId="11a4ce6f-ddc5-4917-b229-e2ee2d70dc9e"/>
+    <managerType typeId="ff2b40e1-7694-47e4-91af-f4b190cc0338" valueTypeId="8daf30f0-ee70-4e9e-855b-942fc29adaa5"/>
+  </producedTypes>
+  <name>ДоговорНаОказаниеПлатныхУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договор на оказание платных услуг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДоговорНаОказаниеПлатныхУслуг.Form.Форма</defaultForm>
+  <forms uuid="df9ccb75-fe24-4f8b-a490-41c62d8af04a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="54548d3f-1485-4bda-b355-8bc1e4228dce">
+    <name>Договор1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор1</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="57a2315c-9b01-4152-a1d9-fe4fa816a58a">
+    <name>Договор2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор2</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

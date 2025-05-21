@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1eabbcae-6615-49b3-af1d-dff4b2b9a3cb">
+  <producedTypes>
+    <selectionType typeId="3669c43d-6879-4a49-b275-1329ae949db7" valueTypeId="b66bf85e-e33c-4a47-a37a-1f8e28b89e17"/>
+    <listType typeId="b9e02dcf-6178-4a01-bfbe-fdb0dda9a3f4" valueTypeId="e5fe9b0a-3d91-4291-9f0b-073332e0b7b8"/>
+    <managerType typeId="3482ba43-adfa-4630-8782-b07d779a966d" valueTypeId="b7a7deb6-1506-495d-b4d1-244a79f3fea1"/>
+    <recordSetType typeId="5d079caa-e69f-4cc6-9dbb-fc35af04a47b" valueTypeId="3e4ef81d-20e1-41db-8c2e-042cfa004e01"/>
+    <recordKeyType typeId="04371283-4f3f-4ea9-964b-21defb7f43e1" valueTypeId="e85e7381-0bb5-4f29-9bac-43ac44e39acf"/>
+    <recordType typeId="72394746-fab3-461d-b158-17ff0e24e393" valueTypeId="9d620703-e086-485e-b9cb-477cdaf051f9"/>
+    <recordManagerType typeId="11530d7f-901e-49bc-91dc-e602782f26a6" valueTypeId="8d275037-d62d-4f15-98e9-61f108e9a6e4"/>
+  </producedTypes>
+  <name>ЗатратыНаРебенкаВМесяц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты на ребенка в месяц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e70ec191-a3a1-485c-949d-f8491b90d5f7">
+    <name>ЗатратыНаРебенкаВМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Затраты на ребенка в месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="e4ad7c2b-35dc-430b-a31f-7f3205a773c9">
+    <name>ВозрастОбучающихся</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст обучающихся</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВозрастОбучающихся</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fea13940-50fa-4755-99f6-381973eb4a3a">
+    <name>ДополнительнаяОбщеобразовательнаяПрограмма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная общеобразовательная программа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДОП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="39de3f56-b80f-46ce-94fe-bead9c406ad8">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование услуги</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПлатныеУслуги</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ДОП для конкретного возраста обучающихся</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

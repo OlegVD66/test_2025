@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdf70ccd-29a5-4e8c-b964-385bc53fee74">
+  <producedTypes>
+    <objectType typeId="c8217a7f-ea6c-4b20-9f90-0836166c7399" valueTypeId="bf80a6d0-e898-4d4a-9308-d25ef4bd426e"/>
+    <refType typeId="7a178dea-d9bc-4dad-8ec2-887408bffba4" valueTypeId="e55b3ebd-5229-41ad-93ba-27279ec68c8f"/>
+    <selectionType typeId="036ebc4b-48bc-45f5-b200-897d806000d7" valueTypeId="ba56aee1-a835-4a20-8460-e0ca3367edb2"/>
+    <listType typeId="9a30c01a-6f27-4140-9d84-e424364c280a" valueTypeId="e29c3fab-e9e6-4532-b58f-bbfeac828d45"/>
+    <managerType typeId="d2894bcb-2694-48c6-b687-63119d9070e5" valueTypeId="05ba9d8e-6aee-4859-b54b-82fd15015d38"/>
+  </producedTypes>
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Сотрудники.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Сотрудники.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="5b3f2bc4-16d2-4f94-86f7-12ca7cb326f9">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Должность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="a0cba937-c17b-45c8-85ae-940e536ea8fa">
+    <producedTypes>
+      <objectType typeId="73a43ea3-d837-4cd9-b823-7b19549423d5" valueTypeId="a6a2142e-f980-428f-8cf1-0e3e3a8f20f0"/>
+      <rowType typeId="3120161d-1ec7-4f0e-a0d0-a26102bc1306" valueTypeId="ed85d612-ed2b-493f-ae28-ef977ff2b1fc"/>
+    </producedTypes>
+    <name>РеализуемыеДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализуемые дополнительные общеобразовательные программы</value>
+    </synonym>
+    <attributes uuid="ee24f0bd-3fed-4a6e-82f1-0419c24d9fe7">
+      <name>НаименованиеДОП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование платной услуги</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПлатныеУслуги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="d656ae1c-1cc1-4d03-bf35-7a6e26b5ec28">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a9ab3bf4-b0df-4326-b8f2-70f0ce88343f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

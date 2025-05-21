@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="197ce887-dea0-4aba-b7b6-1599f9960eed">
+  <producedTypes>
+    <refType typeId="f74eb0f7-954b-4dfe-918f-86346237b8ce" valueTypeId="4384d130-c0dd-4cdc-acf2-156621db25de"/>
+    <listType typeId="092d2581-8cb5-47b8-b3ea-6db61a820ac2" valueTypeId="5fb87d33-5510-423f-b838-c99b9eb786a8"/>
+    <managerType typeId="d60afeb1-0fdb-4eab-8d33-dd93ec93bf5f" valueTypeId="826e2789-9bab-48b8-b6cf-2fc9fc1b22cd"/>
+  </producedTypes>
+  <name>Посещаемость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещаемость</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="bc3a92f1-5444-4765-a923-5c57c4bc908a">
+    <name>Н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Н</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
