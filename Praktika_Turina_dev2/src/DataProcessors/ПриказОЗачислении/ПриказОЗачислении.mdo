@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="174df78a-d957-41ad-9461-de6c22660189">
+  <producedTypes>
+    <objectType typeId="ccea1786-5174-4f6e-9d44-9aa176b3f199" valueTypeId="c5bcc6c4-9461-429d-86af-ad624e7343cd"/>
+    <managerType typeId="974fd054-c8ef-4107-8b9d-e0fea65a28cb" valueTypeId="72cbd1ff-902d-4ea9-978d-491616257398"/>
+  </producedTypes>
+  <name>ПриказОЗачислении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о зачислении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПриказОЗачислении.Form.Форма</defaultForm>
+  <attributes uuid="d9353827-98bb-4fb1-adb5-ef5b6005d176">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5030aba6-9245-4639-bb48-1f8902f7b0dd">
+    <name>ДатаЗачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата зачисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a2175bf3-cd9e-4eca-a7dd-50fe2d19f8f1">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="9d90954e-b0b9-4584-9b31-7b5bfa9e2531">
+    <producedTypes>
+      <objectType typeId="31577efd-2037-415a-aefe-3b859362dd50" valueTypeId="d66c02e9-7552-472d-8fa8-128d890b2848"/>
+      <rowType typeId="808f3944-0b98-4807-b4a3-00b1250030e5" valueTypeId="52472918-1fa4-44e4-861d-40ad16ef82da"/>
+    </producedTypes>
+    <name>СписокДетей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список детей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6c2fa0a7-0684-4f93-af3e-30489761f5f4">
+      <name>ФИОРебенка</name>
+      <synonym>
+        <key>ru</key>
+        <value>ФИО ребенка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Дети</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="68381784-8b75-4200-907f-dcfe820b35c2">
+      <name>ДОП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дополнительная общеобразовательная программа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДОП</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="eb7218d6-53ab-4b2a-bac9-e10489e9044d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b7ee83b6-06a2-4a75-9934-0a8c1a8e9267">
+    <name>ПриказОЗачисленииДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о зачислении ДД</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed8bf89c-267f-472e-95b2-197a220d5b54">
+  <producedTypes>
+    <objectType typeId="bf63e1ec-d389-4c99-b925-6f070e1229cd" valueTypeId="1fd21d5f-2806-43f2-8787-479eddb9f0b8"/>
+    <refType typeId="c3d73d09-a0f2-48d7-a120-8f9feee7fd45" valueTypeId="30667488-158f-4dea-b585-edc435744bf7"/>
+    <selectionType typeId="d5d26a25-c8d3-45cf-bbce-ee5ad58e6408" valueTypeId="296fd92d-7a9a-4183-a549-f1608162acf0"/>
+    <listType typeId="4f606c88-2174-446d-93cf-66d59c0eafac" valueTypeId="7b62ea33-530f-4a0c-b152-666866668e0a"/>
+    <managerType typeId="fbd9e65d-b6e4-4d9f-b87f-4eb7675d2745" valueTypeId="e2e6e2e6-63b4-4536-a19f-6f2d38763210"/>
+  </producedTypes>
+  <name>ПриказОбОтчислении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ об отчислении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОбОтчислении.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриказОбОтчислении.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.УслугиДОППоДетям</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="11d8b93a-b370-4075-9aca-60ad357aa4f1">
+    <name>НомерПриказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер приказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3adcc43f-8615-4129-a836-9dea81bc30ea">
+    <name>ДатаОтчисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отчисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:DateValue">
+      <value>2025-06-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0924a61-780b-4755-a938-d5a929bd9d95">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8da5b286-2a9a-4423-a355-d5b2cb46bfbe">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ed40a266-3706-4522-bffa-3711df0cfed1">
+    <producedTypes>
+      <objectType typeId="b6ec3ec1-9892-497c-a963-4e8a1976f0be" valueTypeId="7a5b2ceb-1bc3-41aa-a7d0-059402bae7ec"/>
+      <rowType typeId="be589c53-2019-47f6-8980-d355e79b29a8" valueTypeId="fc202af1-be10-4afc-8933-18dfe43ed735"/>
+    </producedTypes>
+    <name>СписокДетей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список детей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="af9ba0ef-fafd-44b1-b238-bee7ea55d030">
+      <name>ФИОРебенка</name>
+      <synonym>
+        <key>ru</key>
+        <value>ФИО ребенка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Дети</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="acde65f9-a3b5-4771-ba29-cc049172b913">
+    <name>ПриказОбОтчислении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ об отчислении</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="a526be85-2d33-4693-969d-ea7f4a9327b5">
+    <name>ПриказОбОтчисленииДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ об отчислении ДД</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Document>

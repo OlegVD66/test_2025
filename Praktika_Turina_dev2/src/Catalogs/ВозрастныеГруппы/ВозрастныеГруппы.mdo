@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="908ce50e-ddfe-4bdf-899a-d9aa24de277d">
+  <producedTypes>
+    <objectType typeId="782f4bdc-cc6c-48be-9103-bc8aaa417321" valueTypeId="e1f0c8e7-b626-4462-9769-0eb6d236c861"/>
+    <refType typeId="068502dd-9d68-428f-b48f-fc0e87a2c05f" valueTypeId="591cbd86-1843-4430-8dd4-e3bab822d7a4"/>
+    <selectionType typeId="7c96d7ac-6445-4e58-a6e9-60e81bff70f1" valueTypeId="e59fd41a-4d86-4c45-b9d9-ff96311c7fe2"/>
+    <listType typeId="f88b7d9e-d6c5-405a-8fa6-7bebbd3cadee" valueTypeId="91c2df44-236b-4b41-9fbb-a1a4d8a61a26"/>
+    <managerType typeId="988086f0-ed96-4c7d-8cb2-33bb1874f26c" valueTypeId="ef65edd0-fc47-4787-b185-a0d2eeece6a4"/>
+  </producedTypes>
+  <name>ВозрастныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возрастные группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВозрастныеГруппы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВозрастныеГруппы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ВозрастныеГруппы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВозрастныеГруппы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="466fe683-268c-405d-b5c6-1ddf9c1c0c60">
+    <name>ПолноеНазвание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное название</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2ff24494-042d-430b-ba07-3c3803f2d6e8">
+    <name>ВозрастОбучающихся</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВозрастОбучающихся</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Возраст детей  (от .. до..),</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0ea7d70c-a340-4fef-9357-c0c27827cdfd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d60ed794-47a5-418a-8cca-9078df2fcf65">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

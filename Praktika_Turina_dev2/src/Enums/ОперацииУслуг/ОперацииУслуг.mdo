@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53581f65-f80c-4dc8-93c9-9dbfc0cf6857">
+  <producedTypes>
+    <refType typeId="6bbc182a-d220-40ad-99db-0eb20ed9c007" valueTypeId="ca4c45c4-9138-4689-a25f-50502ebb836f"/>
+    <listType typeId="44c7d66d-0dd8-42de-9279-6961759ad1da" valueTypeId="1440d4ad-a51b-4fe9-b014-1787e3b34e32"/>
+    <managerType typeId="ee63d7a5-f38e-4853-9281-75659631151c" valueTypeId="b407d770-ec4c-42b2-a61f-918641bf4ab8"/>
+  </producedTypes>
+  <name>ОперацииУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции услуг</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b1e8fd0c-b353-491d-a74d-862e35b90c03">
+    <name>Зачисление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачисление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a6d4568-e048-48cb-9932-2c5d372d102e">
+    <name>Отчисление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчисление</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

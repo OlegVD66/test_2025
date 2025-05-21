@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f7aab62-0b0e-4cc2-b0d3-9a3c88e53847">
+  <producedTypes>
+    <refType typeId="b55846ba-d758-47c5-981a-ac05485e9de0" valueTypeId="132bb011-cc33-4133-9ccd-191b2981de68"/>
+    <listType typeId="0f9bafde-8b41-4b4e-8084-6c33f3e66023" valueTypeId="2d88cfdd-7d1f-47f0-98da-c414a624ccbd"/>
+    <managerType typeId="02c6a51b-467a-4aa4-b7bc-d171bffa11e3" valueTypeId="57b27803-db31-464e-9c47-e191e11f5e6c"/>
+  </producedTypes>
+  <name>ВозрастОбучающихся</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возраст обучающихся</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="af7a7f92-2027-4168-b9ae-28ac7f43d323">
+    <name>лет2_3</name>
+    <synonym>
+      <key>ru</key>
+      <value>2-3 года</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca3f1472-5292-4cb8-a4d5-1d6fe17c112b">
+    <name>лет3_4</name>
+    <synonym>
+      <key>ru</key>
+      <value>3-4 года</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b3f9d2b7-b680-40c6-8dbe-7d02a0c24fd6">
+    <name>лет4_5</name>
+    <synonym>
+      <key>ru</key>
+      <value>4-5 лет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="12882b4b-d1d7-401b-b233-92343fd03aa1">
+    <name>лет5_6</name>
+    <synonym>
+      <key>ru</key>
+      <value>5-6 лет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dd703144-a8af-496c-8336-7f25b41e06af">
+    <name>лет6_7</name>
+    <synonym>
+      <key>ru</key>
+      <value>6-7 лет</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

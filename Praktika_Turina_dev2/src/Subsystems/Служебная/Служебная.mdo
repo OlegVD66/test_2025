@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d349d2ee-f9f8-4b24-b55d-9d528366ac1e">
+  <name>Служебная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебная</value>
+  </synonym>
+  <comment>Не отображается в интерфейсе</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ПлатныеУслуги</content>
+  <content>Document.ПриказОЗачислении</content>
+</mdclass:Subsystem>

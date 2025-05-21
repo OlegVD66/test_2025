@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c5d47d9-0063-47eb-bec4-50e5ba67328d">
+  <producedTypes>
+    <objectType typeId="bc5c9c56-8a32-4f4a-94a2-e432969cef92" valueTypeId="86f007ab-2eb2-44fc-af2a-7dcaf2856002"/>
+    <refType typeId="ae9b92b0-3ffe-452f-9bc9-13bb2ba21929" valueTypeId="c75b1259-a89b-4392-9962-9e967ccdcf10"/>
+    <selectionType typeId="5ffabf82-8e4b-4f94-896e-edd5ff8bd956" valueTypeId="d17d4163-368b-4f5b-b70e-e7e22d0f212a"/>
+    <listType typeId="9814fc6a-ea58-4ea6-90c2-98effc2f784b" valueTypeId="8503e427-e674-4409-84f6-8af6785322e2"/>
+    <managerType typeId="c4bc72c3-3cce-49df-937a-93e0e8f00164" valueTypeId="a69ba36a-de6f-48f4-a84e-0ea1fc7d90a3"/>
+  </producedTypes>
+  <name>ДОП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные общеобразовательные программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДОП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДОП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8e1a67e-5b83-490f-af6b-362f376d7ddb">
+  <name>УчетИОтчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет и отчетность</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.УчетИОтчетность</picture>
+  </picture>
+  <content>Document.ЖурналПосещаемости</content>
+  <content>Report.ПлатныеУслуги</content>
+  <content>Report.ПриложениеКПриказуОбУстановленииДоплат</content>
+</mdclass:Subsystem>
