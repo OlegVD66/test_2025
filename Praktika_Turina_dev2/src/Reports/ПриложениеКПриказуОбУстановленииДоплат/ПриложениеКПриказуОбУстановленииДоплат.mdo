@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17f4eff5-ae4c-4d13-b791-0e7f288f128b">
+  <producedTypes>
+    <objectType typeId="2af72729-a5a3-4951-82d4-b3d3a616cea4" valueTypeId="1345d0de-df22-4a39-8d38-1a5a2b5134fd"/>
+    <managerType typeId="01753d33-7e13-4b98-86f9-5f9a141b423f" valueTypeId="1bc8c09b-6956-4f29-aaa6-eef1d37b5a49"/>
+  </producedTypes>
+  <name>ПриложениеКПриказуОбУстановленииДоплат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приложение к приказу об установлении доплат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПриложениеКПриказуОбУстановленииДоплат.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4a3b861b-e732-4319-9bf4-b8664f2d80ea">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

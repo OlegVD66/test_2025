@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4550be5f-fee7-42b9-935a-78d060317b32">
+  <producedTypes>
+    <objectType typeId="db634e7a-b6c9-47ef-aa74-741914e9e61a" valueTypeId="fee72f68-5a4b-4914-b2c3-e8b86404d6d2"/>
+    <refType typeId="1ae4b96c-89e2-4a87-b9ae-e742169bb8f8" valueTypeId="c2734d81-a861-44aa-a77f-3f2f662c9bc4"/>
+    <selectionType typeId="8c43f91f-4b44-4613-bd3a-a7790302fac5" valueTypeId="900e44c8-4627-44e5-b31d-babb00146250"/>
+    <listType typeId="6e5f0722-b784-4db5-8cf6-0715e854f13c" valueTypeId="cb3fc105-78db-444b-ae13-5938dc05bc2a"/>
+    <managerType typeId="c60b32a7-a0fb-4c23-9ebc-aaf9babdad9b" valueTypeId="7a877f25-0c9b-4744-8254-5590812d74ab"/>
+  </producedTypes>
+  <name>Дети</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дети</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Дети.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Дети.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ребенок</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Ребенок</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Дети</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Дети</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Дети.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="f11e51dc-fb9b-466d-b55b-09ae36f3ff3c">
+    <name>ДатаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dca56b43-0cfa-4860-87c1-747d9ddf6663">
+    <name>Пол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Пол</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8b88d332-f4cd-47df-b5d5-1efb4700e422">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="347ff907-0d09-41c6-83b5-a0cf4a2ddc1c">
+    <name>ФИОРодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО родителя (законного представителя)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>70</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="51005ab7-751b-45fd-8a44-f641e6f3291b">
+    <name>ВозрастнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возрастная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВозрастныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="2346392e-aff0-4e56-9fd6-c2916eb1540b">
+    <producedTypes>
+      <objectType typeId="0b4b26a6-bf1a-4670-8e3f-8da6ab499dcf" valueTypeId="64ab6508-fd03-45c5-904c-7a3e7ce9dcb1"/>
+      <rowType typeId="d93397ab-3cf3-4ba0-a818-1eb5769fb8b3" valueTypeId="0bdbdd28-0514-4721-ab3a-73f5ebaee0e9"/>
+    </producedTypes>
+    <name>ПосещаемыеДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посещаемые дополнительные общеобразовательные программы</value>
+    </synonym>
+    <attributes uuid="a46dcac3-2818-4934-a1c2-6cf01cc9ee57">
+      <name>НаименованиеДОП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование дополнительной общеобразовательной программы</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПлатныеУслуги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f2e29ad1-73c3-471d-9d4a-c34ff8ecf2c3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

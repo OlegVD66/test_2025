@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c80c54bc-9717-4267-b5dd-9bc256460089">
+  <producedTypes>
+    <objectType typeId="7323658e-5016-4a7c-a8bc-383c6321925d" valueTypeId="17226761-eb22-483e-8152-dac05e80ad11"/>
+    <refType typeId="275566fd-c1e3-4395-8be6-3466641c5e07" valueTypeId="2355337c-1043-426d-bd05-093b7fc66984"/>
+    <selectionType typeId="78d496f0-de6c-48d3-9423-080821d48f45" valueTypeId="c5e195dc-ba1c-4867-a518-46f6420a8481"/>
+    <listType typeId="79f0f4e9-831d-4cf3-a0fa-3777e049601a" valueTypeId="30d6262c-345e-475f-8148-7c5f316dd8c7"/>
+    <managerType typeId="2e03ea77-ec2d-485e-9a39-d766681aedf2" valueTypeId="08a11a7f-e5f6-44a9-afb0-937d5fb1a28d"/>
+  </producedTypes>
+  <name>ЖурналПосещаемости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал посещаемости</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЖурналПосещаемости.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Табель посещаемости</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Табель посещаемости</value>
+  </extendedObjectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЖурналПосещаемости.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЖурналПосещаемости.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="f9caac69-f5eb-4c13-af53-daf418d0a64c">
+    <name>НаименованиеДОП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование ДОП</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДОП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef066580-34f5-43bb-b9d1-980499aac4dc">
+    <name>КоличествоПлатныхУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество платных услуг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2075e824-68e7-4820-b75a-4e6c97cc29d9">
+    <name>КоличествоДетодней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество детодней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79f8c637-ae7f-458b-88c0-67f2f235ab23">
+    <name>СуммаДоплатыПреподавателю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма доплаты преподавателю, руб.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Размер доплаты преподавателю за оказание платных дополнительных образовательных услуг, руб.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6221e4ce-7952-4eec-8af6-5981015e3744">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8a20c123-ed5b-428a-a903-3061c2616e04">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d226e1fd-55ce-464e-833e-74f554154898">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="73c72452-07fa-4503-8d9c-64debf0bb621">
+    <producedTypes>
+      <objectType typeId="42f5d7b4-4cd6-431f-8198-7d3b2d8f7c49" valueTypeId="d472c9a9-d76a-4954-92ad-faf72dae63f2"/>
+      <rowType typeId="515f50cf-d39d-41c8-a87f-f23018f52b4c" valueTypeId="2eb7a268-e6b7-430b-ac16-bf5334bf6edb"/>
+    </producedTypes>
+    <name>СписокПосещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список посещения</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9b7d5391-24b9-4217-93d5-bb8af88d57ee">
+      <name>ФИОРебенка</name>
+      <synonym>
+        <key>ru</key>
+        <value>ФИОРебенка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Дети</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e464e834-eafd-42fa-8df7-329ec8dd649d">
+      <name>Группа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВозрастныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="912b726f-4c59-4aed-aa61-c211467e43b1">
+      <name>День1</name>
+      <synonym>
+        <key>ru</key>
+        <value>01</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1a6e4438-33d6-4f3f-9286-b445649ac0eb">
+      <name>День2</name>
+      <synonym>
+        <key>ru</key>
+        <value>02</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c94015b2-ab8b-4e0b-b74c-86a77a2f2885">
+      <name>День3</name>
+      <synonym>
+        <key>ru</key>
+        <value>03</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="337894e7-3f64-4285-8c8d-c866affea998">
+      <name>День4</name>
+      <synonym>
+        <key>ru</key>
+        <value>04</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ddf992b5-6432-479f-be11-73c073a46927">
+      <name>День5</name>
+      <synonym>
+        <key>ru</key>
+        <value>05</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="589cff29-5bf4-4d92-b0ff-8bb68191dc02">
+      <name>День6</name>
+      <synonym>
+        <key>ru</key>
+        <value>06</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7c930f89-fb17-4271-a0f6-10d402da8d1c">
+      <name>День7</name>
+      <synonym>
+        <key>ru</key>
+        <value>07</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b5a671de-dcbb-4556-8f0d-8a3c8fd3d275">
+      <name>День8</name>
+      <synonym>
+        <key>ru</key>
+        <value>08</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Посещаемость</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94a10d78-c8bc-4c21-a68e-b57293a9ce7b">
+      <name>Итого</name>
+      <synonym>
+        <key>ru</key>
+        <value>Итого</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Суммарное количество посещенных ребенком занятий в отчетный месяц</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="25f35da9-d63b-4238-b3cc-4c97faa5da11">
+      <name>СуммаКОплате</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма к оплате</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebfe2ae3-425a-4726-8e48-152b2f2094e4">
+  <name>Делопроизводство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Делопроизводство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Делопроизводство</picture>
+  </picture>
+  <content>DataProcessor.ДоговорНаОказаниеПлатныхУслуг</content>
+  <content>Document.ДоговорНаОказаниеПлатныхУслуг</content>
+  <content>Document.ПриказОДосрочномОтчислении</content>
+  <content>Document.ПриказОбОтчислении</content>
+  <content>DataProcessor.ПриказОЗачислении</content>
+</mdclass:Subsystem>
